@@ -1,4 +1,6 @@
 import { CheckCircle } from 'phosphor-react'
+import { isPast, format } from 'date-fns'
+import ptBR from 'date-fns/locale/pt-BR'
 
 interface LessonProps {
   title: string;
@@ -8,7 +10,10 @@ interface LessonProps {
 }
 
 export function Lesson(props: LessonProps) {
-  const isLessonAvailable = false;
+  const isLessonAvailable = isPast(props.availableAt);
+  const availableDateFormatted = format(props.availableAt, "EEEE' - 'de 'd ' de 'MMM' - 'k'h'mm", {
+    locale: ptBR,
+  })
 
   return (
     <a href="#">
