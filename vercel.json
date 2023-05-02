@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--ignore-scripts"
+    },
+    "postinstall": "npm install --force"
+  }
+}
