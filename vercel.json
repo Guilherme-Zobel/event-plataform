@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "CI": "1"
+    },
+    "command": "npm install --force && tsc && vite build"
+  }
+}
