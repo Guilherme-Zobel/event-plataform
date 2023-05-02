@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "npm install --force",
-    "build": "tsc && vite build",
+    "build": "npm install --force && tsc && vite build",
     "preview": "vite preview",
     "codegen": "graphql-codegen"
   },
