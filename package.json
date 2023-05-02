@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm install --force",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "codegen": "graphql-codegen"
